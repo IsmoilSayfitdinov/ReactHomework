@@ -45,6 +45,7 @@ const ProductView = () => {
 
 	function aaa(e) {
 		e.preventDefault()
+		
 	}
 
 
@@ -240,7 +241,6 @@ const ProductView = () => {
 					</div>
 				</form>
 			</div>
-			<div></div>
 			<Service />
 		</div>
 	)

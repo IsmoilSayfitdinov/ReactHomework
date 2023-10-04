@@ -21,7 +21,9 @@ const Nav = () => {
 
    const location = useLocation()
 
-  return delet.includes(location.pathname) ? (<></>) : (
+  return delet.includes(location.pathname) ? (
+		<></>
+	) : (
 		<nav>
 			<div className='main_nav'>
 				<div className='img_flag'>
@@ -53,9 +55,11 @@ const Nav = () => {
 						alt=''
 						onClick={() => changeLang('ru')}
 					/>
+					<BsTelephone className='icon_phone-media' />
 					<a href='+998977042553'>
 						<BsTelephone></BsTelephone> +998977042553
 					</a>
+					<HiOutlineMail className='icon_email-media' />
 					<a href='ismoilsayfitdinov@gmail.com' className='a'>
 						{' '}
 						<HiOutlineMail className='icon_email'></HiOutlineMail>{' '}

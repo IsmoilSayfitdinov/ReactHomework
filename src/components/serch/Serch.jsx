@@ -38,7 +38,9 @@ const Search = (productsView) => {
   };
 
    const location = useLocation()
-  return delet.includes(location.pathname) ? (<></>) : (
+  return delet.includes(location.pathname) ? (
+		<></>
+	) : (
 		<div>
 			<div className='search_wrapper'>
 				<div className='search'>
@@ -148,30 +150,30 @@ const Search = (productsView) => {
 							)}
 						</div>
 						<div className='sub_navigation'>
-							<Link
-								className='sub__nav-link'
-								to='/'
-							>
-								{t('Nav.main')}
-							</Link>
-							<Link
-								className='sub__nav-link'
-								to='/Parents'
-							>
-								{t('Nav.partenorts')}
-							</Link>
-							<Link
-								className='sub__nav-link'
-								to='/Aloqa'
-							>
-								{t('Nav.Contact')}
-							</Link>
-							<Link
-								className='sub__nav-link'
-								to='/contact'
-							>
-								{t('Nav.About')}
-							</Link>
+							<ul className='sub_navigation-main'>
+								<li className="sub__navigation-link">
+									<Link className='sub__nav-link' to='/'>
+										{t('Nav.main')}
+									</Link>
+								</li>
+								<li className="sub__navigation-link">
+									{' '}
+									<Link className='sub__nav-link' to='/Parents'>
+										{t('Nav.partenorts')}
+									</Link>
+								</li>
+								<li className="sub__navigation-link">
+									{' '}
+									<Link className='sub__nav-link' to='/Aloqa'>
+										{t('Nav.Contact')}
+									</Link>
+								</li>
+								<li className="sub__navigation-link">
+									<Link className='sub__nav-link' to='/contact'>
+										{t('Nav.About')}
+									</Link>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

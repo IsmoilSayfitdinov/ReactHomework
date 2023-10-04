@@ -14,11 +14,8 @@ const loginReducer = (state = intiealState , action) => {
 					isLoggin: true,
 				}
                 case "@REMOVE__LOCAL" :
-                    console.log(action)
                     return ({
                     })
-                      
-                    
 			default:
 				return state
 		}
